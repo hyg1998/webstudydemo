@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            width: 190px;
+            height: 35px;
+            background-color: rgb(81, 226, 44);
+            line-height: 35px;
+            text-align: center;
+            
+        }
+        .reach li  a {
+            font: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+        .reach li:hover {
+            background-color: #ffe4dc;
+        }
+        /* 鼠标讲过li a变颜色，后代选择器 */
+        .reach li:hover a {
+            color: #ff5000;
+        }
+        .reach a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul class="reach">
+        <li><a href="">家具/百货/电器</a></li>
+        <li><a href="">家具/百货/电器</a></li>
+        <li><a href="">家具/百货/电器</a></li>
+        <li><a href="">家具/百货/电器</a></li>
+        <li><a href="">家具/百货/电器</a></li>
+    </ul>
+</body>
+</html>

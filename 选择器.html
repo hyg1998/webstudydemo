@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        /* 后代选择器，无限制嵌套，但最好不超过二层 */
+        .father li {
+            color: red;
+        }
+        .nav {
+            color: pink ;
+        }
+        .son>span {
+                    color: red;
+        }
+        .bn,.bin {
+            color: aquamarine;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>小米</li>
+        <li>小米</li>
+        <li>小米</li>
+        <li>小米</li>
+    </ul>
+    <ul class="father">
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+    </ul>
+    <div class="nav">
+        <span>子代</span>
+    </div>
+    <div>
+        <span>它代</span>
+    </div>
+    <div class="son">
+        <span>三室同堂儿子</span>
+        <span>三室同堂儿子</span>
+        <span>三室同堂儿子</span>
+        <p>
+            <span>三室同堂孙子</span>
+            <span>三室同堂孙子</span>
+            <span>三室同堂孙子</span>
+        </p>
+    </div>
+    <div class="bn">ddddd</div>
+    <p class="bin">dddddd</p>
+    <div><span>111111</span></div>
+
+</body>
+</html>
