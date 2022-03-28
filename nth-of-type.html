@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 只计算li同级 */
+        ul li:nth-child(2) {
+            color: red;
+        }
+        /* 只要ul的子类即可 */
+        ul li:nth-of-type(2) {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <p>2</p>
+            <li>333</li>
+            <li>333</li>
+            <li>333</li>
+            <li>333</li>
+            <li>333</li>
+        </ul>
+    </div>
+</body>
+</html>
